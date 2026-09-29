@@ -87,6 +87,10 @@
     }
     .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 72px; align-items: center; }
     .identity { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+    .portrait {
+      width: 84px; height: 84px; flex: 0 0 auto; border-radius: 24px; object-fit: cover; object-position: center 24%;
+      border: 2px solid rgba(255,255,255,.75); box-shadow: 0 15px 38px rgba(0,0,0,.28);
+    }
     .identity p { margin: 4px 0 0; color: #a9c1c7; font-weight: 650; }
     .hero .eyebrow { color: var(--mint); }
     .hero h1 { max-width: 760px; margin-bottom: 24px; font-size: clamp(3rem, 7vw, 5.7rem); }
@@ -247,6 +251,7 @@
       .hero { padding: 112px 0 76px; }
       .hero-grid { gap: 46px; }
       .identity { align-items: flex-start; }
+      .portrait { width: 70px; height: 70px; border-radius: 20px; }
       .identity p { font-size: .9rem; }
       .pipeline { grid-template-columns: repeat(2, 1fr); }
       .proof { padding: 21px; }
@@ -285,6 +290,7 @@
     <div class="shell hero-grid">
       <div>
         <div class="identity">
+          <img class="portrait" src="mina-lee.png" alt="李奕儒 Mina Lee 大頭照" width="168" height="168">
           <div>
             <div class="eyebrow">Mina Lee · Taoyuan, Taiwan</div>
             <p>AI 應用工程師｜Applied ML &amp; Data Products</p>
